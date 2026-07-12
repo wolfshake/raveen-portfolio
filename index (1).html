@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raveen Ratheesh — Full Stack Developer</title>
+  <meta name="description" content="Raveen Ratheesh — Full Stack Developer. Integrated MCA student building full-stack web and mobile applications with ASP.NET, PHP, and modern JavaScript." />
+  <meta name="theme-color" content="#060810" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Raveen Ratheesh — Full Stack Developer" />
+  <meta property="og:description" content="Portfolio of Raveen Ratheesh, Full Stack Developer & Integrated MCA student." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-mark">&lt;RR/&gt;</span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============ ANIMATED BACKGROUND ============ -->
+  <div class="bg-field" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ============ SKIP LINK (ACCESSIBILITY) ============ -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="#hero" class="nav-logo">RR<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <a href="assets/resume.pdf" class="btn btn-ghost nav-cta" download>Resume</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow mono">Full Stack Developer · Kochi, Kerala</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad-text">Raveen Ratheesh</span>
+          </h1>
+          <p class="hero-role mono">
+            <span id="typedRole"></span><span class="caret" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-summary">
+            Integrated MCA student with hands-on experience in full-stack web and mobile
+            application development using ASP.NET, PHP and SQL technologies. I build
+            scalable, user-centric platforms — from booking systems to rental marketplaces —
+            and I'm always chasing the next hard problem worth solving.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="assets/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/wolfshake" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.39-5.27 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/raveen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="mailto:raveenr46@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M1.5 4.5A1.5 1.5 0 0 1 3 3h18a1.5 1.5 0 0 1 1.5 1.5v15A1.5 1.5 0 0 1 21 21H3a1.5 1.5 0 0 1-1.5-1.5v-15Zm2.4.75 8.1 6.3 8.1-6.3H3.9Zm16.6 1.4-8.02 6.24a1.5 1.5 0 0 1-1.85 0L2.6 6.65V18.5h18.9V6.65Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--delay:120ms">
+          <div class="terminal" role="img" aria-label="Terminal window showing developer profile">
+            <div class="terminal-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title mono">raveen@portfolio:~</span>
+            </div>
+            <div class="terminal-body mono" id="terminalBody">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="out">raveen_ratheesh.dev</p>
+              <p><span class="prompt">$</span> cat role.txt</p>
+              <p class="out">Full Stack Developer / Integrated MCA Student</p>
+              <p><span class="prompt">$</span> stack --list</p>
+              <p class="out">[ASP.NET · PHP · React · Angular · Flutter · MySQL · SQL Server]</p>
+              <p><span class="prompt">$</span> status</p>
+              <p class="out ok">&gt; open to internships &amp; collaborations</p>
+              <p class="blink-line"><span class="prompt">$</span> <span class="cursor-block"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">01 · About</p>
+        <h2 class="section-title">Building software that solves real problems</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm an Integrated MCA student at De Paul Institute of Science and Technology,
+              with hands-on experience across full-stack web and mobile application
+              development. My work spans <strong>ASP.NET</strong>, <strong>PHP</strong>, and
+              <strong>SQL</strong>-driven systems — including an online toy shop booking
+              platform and a full house-rental management system with authentication,
+              search, and booking workflows.
+            </p>
+            <p>
+              I care about writing code that's scalable and user-centric, and I enjoy
+              picking up new stacks quickly — from Angular component architecture during my
+              front-end internship to Flutter and Firebase for mobile builds. Strong
+              problem-solving and adaptability drive how I approach every project.
+            </p>
+            <div class="about-facts">
+              <div class="fact">
+                <span class="fact-label mono">Location</span>
+                <span class="fact-value">Kochi, Kerala, India</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label mono">Studying</span>
+                <span class="fact-value">Integrated MCA · Class of 2027</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label mono">Focus</span>
+                <span class="fact-value">Full-Stack Web &amp; Mobile Development</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label mono">Soft Skills</span>
+                <span class="fact-value placeholder-note">[Placeholder — not listed on resume. Add e.g. communication, teamwork, time management.]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card reveal glass" style="--delay:100ms">
+            <h3 class="mono card-kicker">Quick Facts</h3>
+            <ul class="quick-list">
+              <li><strong>Name</strong><span>Raveen Ratheesh</span></li>
+              <li><strong>Role</strong><span>Full Stack Developer</span></li>
+              <li><strong>Email</strong><span>raveenr46@gmail.com</span></li>
+              <li><strong>Phone</strong><span>+91 79070 84694</span></li>
+              <li><strong>GitHub</strong><span>github.com/wolfshake</span></li>
+              <li><strong>LinkedIn</strong><span>linkedin.com/in/raveen</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">02 · Skills</p>
+        <h2 class="section-title">Technical toolkit</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-card glass reveal">
+            <h3 class="skill-cat">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zM14.6 16.6 19.2 12l-4.6-4.6L16 6l6 6-6 6z"/></svg>
+              Languages
+            </h3>
+            <ul class="bar-list">
+              <li><div class="bar-head"><span>C#</span><span class="mono">85%</span></div><div class="bar"><span style="--pct:85%"></span></div></li>
+              <li><div class="bar-head"><span>PHP</span><span class="mono">85%</span></div><div class="bar"><span style="--pct:85%"></span></div></li>
+              <li><div class="bar-head"><span>JavaScript</span><span class="mono">80%</span></div><div class="bar"><span style="--pct:80%"></span></div></li>
+              <li><div class="bar-head"><span>SQL</span><span class="mono">80%</span></div><div class="bar"><span style="--pct:80%"></span></div></li>
+              <li><div class="bar-head"><span>Dart</span><span class="mono">65%</span></div><div class="bar"><span style="--pct:65%"></span></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal" style="--delay:80ms">
+            <h3 class="skill-cat">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 4h18v2H3zM3 11h18v2H3zM3 18h18v2H3z"/></svg>
+              Frontend
+            </h3>
+            <ul class="bar-list">
+              <li><div class="bar-head"><span>HTML</span><span class="mono">90%</span></div><div class="bar"><span style="--pct:90%"></span></div></li>
+              <li><div class="bar-head"><span>CSS</span><span class="mono">88%</span></div><div class="bar"><span style="--pct:88%"></span></div></li>
+              <li><div class="bar-head"><span>Bootstrap</span><span class="mono">80%</span></div><div class="bar"><span style="--pct:80%"></span></div></li>
+              <li><div class="bar-head"><span>Angular</span><span class="mono">70%</span></div><div class="bar"><span style="--pct:70%"></span></div></li>
+              <li><div class="bar-head"><span>React</span><span class="mono">70%</span></div><div class="bar"><span style="--pct:70%"></span></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal" style="--delay:160ms">
+            <h3 class="skill-cat">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2 2 7l10 5 10-5-10-5Zm0 8L2 15l10 5 10-5-10-5Z" opacity=".7"/><path fill="currentColor" d="M12 2 2 7l10 5 10-5-10-5Z"/></svg>
+              Backend
+            </h3>
+            <ul class="bar-list">
+              <li><div class="bar-head"><span>ASP.NET</span><span class="mono">85%</span></div><div class="bar"><span style="--pct:85%"></span></div></li>
+              <li><div class="bar-head"><span>Laravel</span><span class="mono">70%</span></div><div class="bar"><span style="--pct:70%"></span></div></li>
+              <li><div class="bar-head"><span>Node.js</span><span class="mono">65%</span></div><div class="bar"><span style="--pct:65%"></span></div></li>
+              <li><div class="bar-head"><span>Express.js</span><span class="mono">65%</span></div><div class="bar"><span style="--pct:65%"></span></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal" style="--delay:240ms">
+            <h3 class="skill-cat">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2C7 2 3 3.6 3 6v12c0 2.4 4 4 9 4s9-1.6 9-4V6c0-2.4-4-4-9-4Zm0 2c4.4 0 7 1.3 7 2s-2.6 2-7 2-7-1.3-7-2 2.6-2 7-2Z"/></svg>
+              Databases
+            </h3>
+            <ul class="bar-list">
+              <li><div class="bar-head"><span>MySQL</span><span class="mono">85%</span></div><div class="bar"><span style="--pct:85%"></span></div></li>
+              <li><div class="bar-head"><span>SQL Server</span><span class="mono">82%</span></div><div class="bar"><span style="--pct:82%"></span></div></li>
+              <li><div class="bar-head"><span>MongoDB</span><span class="mono">60%</span></div><div class="bar"><span style="--pct:60%"></span></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal" style="--delay:320ms">
+            <h3 class="skill-cat">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M22 12c0-.6-.4-1-1-1h-1.1a7 7 0 0 0-.7-1.7l.8-.8c.4-.4.4-1 0-1.4l-1.1-1.1c-.4-.4-1-.4-1.4 0l-.8.8A7 7 0 0 0 15 6.1V5c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1v1.1a7 7 0 0 0-1.7.7l-.8-.8c-.4-.4-1-.4-1.4 0L4 7.1c-.4.4-.4 1 0 1.4l.8.8a7 7 0 0 0-.7 1.7H3c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1h1.1c.2.6.4 1.2.7 1.7l-.8.8c-.4.4-.4 1 0 1.4L5.1 20c.4.4 1 .4 1.4 0l.8-.8c.5.3 1.1.5 1.7.7V21c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-1.1c.6-.2 1.2-.4 1.7-.7l.8.8c.4.4 1 .4 1.4 0l1.1-1.1c.4-.4.4-1 0-1.4l-.8-.8c.3-.5.5-1.1.7-1.7H21c.6 0 1-.4 1-1v-4Zm-10 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/></svg>
+              Mobile &amp; Tools
+            </h3>
+            <ul class="bar-list">
+              <li><div class="bar-head"><span>Flutter</span><span class="mono">65%</span></div><div class="bar"><span style="--pct:65%"></span></div></li>
+              <li><div class="bar-head"><span>Firebase</span><span class="mono">65%</span></div><div class="bar"><span style="--pct:65%"></span></div></li>
+              <li><div class="bar-head"><span>Git &amp; GitHub</span><span class="mono">85%</span></div><div class="bar"><span style="--pct:85%"></span></div></li>
+              <li><div class="bar-head"><span>Postman</span><span class="mono">75%</span></div><div class="bar"><span style="--pct:75%"></span></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal" style="--delay:400ms">
+            <h3 class="skill-cat">
+              <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4Z" opacity=".8"/></svg>
+              IDEs
+            </h3>
+            <ul class="bar-list">
+              <li><div class="bar-head"><span>Visual Studio</span><span class="mono">85%</span></div><div class="bar"><span style="--pct:85%"></span></div></li>
+              <li><div class="bar-head"><span>VS Code</span><span class="mono">90%</span></div><div class="bar"><span style="--pct:90%"></span></div></li>
+            </ul>
+            <p class="placeholder-note skill-note">Soft skills weren't listed on the resume — add strengths like communication or teamwork here.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">03 · Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <div class="timeline-head">
+                <h3>Front-End Development Intern</h3>
+                <span class="mono timeline-date">Mar 2026 — Apr 2026</span>
+              </div>
+              <p class="timeline-org">NeST Digital Academy</p>
+              <ul class="timeline-list">
+                <li>Completed Angular-based front-end application development training.</li>
+                <li>Participated in a 7-day Industry Immersion Program.</li>
+                <li>Worked on component-based UI development and modern web technologies.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Angular</span>
+                <span class="tag">Component Architecture</span>
+                <span class="tag">Modern Web</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">04 · Projects</p>
+        <h2 class="section-title">Things I've built</h2>
+
+        <div class="filter-row" role="tablist" aria-label="Filter projects by technology">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="aspnet" role="tab" aria-selected="false">ASP.NET</button>
+          <button class="filter-btn" data-filter="php" role="tab" aria-selected="false">PHP</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card glass reveal" data-tags="aspnet">
+            <div class="project-media">
+              <svg viewBox="0 0 400 240" class="project-svg" role="img" aria-label="Online toy shop platform preview">
+                <defs>
+                  <linearGradient id="gradToy" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#8b5cf6"/>
+                    <stop offset="100%" stop-color="#3b82f6"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="240" fill="url(#gradToy)" opacity="0.18"/>
+                <rect x="30" y="40" width="150" height="100" rx="10" fill="#8b5cf6" opacity="0.35"/>
+                <rect x="200" y="40" width="150" height="45" rx="10" fill="#3b82f6" opacity="0.35"/>
+                <rect x="200" y="95" width="150" height="45" rx="10" fill="#22d3ee" opacity="0.3"/>
+                <rect x="30" y="160" width="320" height="16" rx="8" fill="#ffffff" opacity="0.12"/>
+                <rect x="30" y="186" width="220" height="16" rx="8" fill="#ffffff" opacity="0.08"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Online Toy Shop Platform</h3>
+              <p>
+                End-to-end booking platform for a toy shop with user management, toy
+                selection, and a full booking workflow.
+              </p>
+              <div class="tag-row">
+                <span class="tag">ASP.NET</span>
+                <span class="tag">C#</span>
+                <span class="tag">SQL Server</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/wolfshake" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.39-5.27 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+                  Code
+                </a>
+                <span class="btn btn-sm btn-disabled" aria-disabled="true" title="Live demo not provided on resume">Live Demo — Coming Soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-tags="php" style="--delay:100ms">
+            <div class="project-media">
+              <svg viewBox="0 0 400 240" class="project-svg" role="img" aria-label="Online house rental platform preview">
+                <defs>
+                  <linearGradient id="gradHouse" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#3b82f6"/>
+                    <stop offset="100%" stop-color="#22d3ee"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="240" fill="url(#gradHouse)" opacity="0.18"/>
+                <polygon points="90,50 150,90 30,90" fill="#3b82f6" opacity="0.4"/>
+                <rect x="45" y="90" width="90" height="70" fill="#3b82f6" opacity="0.3"/>
+                <rect x="200" y="60" width="150" height="100" rx="10" fill="#22d3ee" opacity="0.25"/>
+                <rect x="30" y="180" width="320" height="16" rx="8" fill="#ffffff" opacity="0.12"/>
+                <rect x="30" y="206" width="180" height="16" rx="8" fill="#ffffff" opacity="0.08"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Online House Rental Platform</h3>
+              <p>
+                Web-based house rental management system with property listings, advanced
+                search, user authentication, booking requests, and database-driven rental
+                management for tenants and landlords.
+              </p>
+              <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">VS Code</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/wolfshake" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.39-5.27 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+                  Code
+                </a>
+                <span class="btn btn-sm btn-disabled" aria-disabled="true" title="Live demo not provided on resume">Live Demo — Coming Soon</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="project-placeholder-card glass reveal" style="--delay:200ms">
+            <p class="mono">+ more projects</p>
+            <p class="placeholder-note">Only two projects were listed on the resume. Add more cards here as new work ships.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">05 · Education</p>
+        <h2 class="section-title">Academic background</h2>
+
+        <div class="edu-card glass reveal">
+          <div class="edu-head">
+            <h3>Integrated Master of Computer Applications (MCA)</h3>
+            <span class="mono edu-date">Expected 2027</span>
+          </div>
+          <p class="edu-org">De Paul Institute of Science and Technology</p>
+          <div class="tag-row">
+            <span class="tag">CGPA: 8.0</span>
+            <span class="tag">Integrated MCA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">06 · Certifications &amp; Achievements</p>
+        <h2 class="section-title">Recognition &amp; training</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card glass reveal">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="m12 1 3.1 6.6 7.3.9-5.4 5 1.5 7.2L12 17.3 5.5 20.7 7 13.5l-5.4-5 7.3-.9L12 1Z"/></svg>
+            </div>
+            <h3>Front-End Application Development using Angular</h3>
+            <p class="cert-org">NeST Digital Academy</p>
+          </div>
+
+          <div class="cert-card glass reveal" style="--delay:100ms">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2 2 7l10 5 10-5-10-5Zm-7 8.2V15l7 3.5 7-3.5v-4.8L12 14 5 10.2Z"/></svg>
+            </div>
+            <h3>7-Day Industry Immersion Program</h3>
+            <p class="cert-org">NeST Digital Academy — Achievement</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="section-eyebrow mono">07 · Contact</p>
+        <h2 class="section-title">Let's build something together</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-lead">
+              Open to internships, freelance work, and collaborations. The fastest way to
+              reach me is email — I check it daily.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M1.5 4.5A1.5 1.5 0 0 1 3 3h18a1.5 1.5 0 0 1 1.5 1.5v15A1.5 1.5 0 0 1 21 21H3a1.5 1.5 0 0 1-1.5-1.5v-15Zm2.4.75 8.1 6.3 8.1-6.3H3.9Zm16.6 1.4-8.02 6.24a1.5 1.5 0 0 1-1.85 0L2.6 6.65V18.5h18.9V6.65Z"/></svg></span>
+                <a href="mailto:raveenr46@gmail.com">raveenr46@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 9 9 0 0 0 2.8.45 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 2 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1 .16 1.9.45 2.8a1 1 0 0 1-.25 1l-2.1 2Z"/></svg></span>
+                <a href="tel:+917907084694">+91 79070 84694</a>
+              </li>
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg></span>
+                <span>Kochi, Kerala, India</span>
+              </li>
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.39-5.27 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></span>
+                <a href="https://github.com/wolfshake" target="_blank" rel="noopener noreferrer">github.com/wolfshake</a>
+              </li>
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg></span>
+                <a href="https://linkedin.com/in/raveen" target="_blank" rel="noopener noreferrer">linkedin.com/in/raveen</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form glass reveal" id="contactForm" style="--delay:100ms" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+              <span class="field-error" data-for="name"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+              <span class="field-error" data-for="email"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="field-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span class="btn-text">Send Message</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <p class="placeholder-note">
+              This form is front-end only. Connect it to a service like Formspree, EmailJS,
+              or your own backend to receive submissions.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="nav-logo">RR<span class="dot">.</span></a>
+      <p class="mono">&copy; <span id="year"></span> Raveen Ratheesh. Built with vanilla HTML, CSS &amp; JS.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/wolfshake" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/raveen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:raveenr46@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 5 4 13l1.4 1.4L11 8.8V19h2V8.8l5.6 5.6L20 13z"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
