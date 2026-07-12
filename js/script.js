@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = navLinks
     .map((link) => document.getElementById(link.dataset.section))
     .filter(Boolean);
+  const backToTop = document.getElementById('backToTop');
 
   function onScroll() {
     nav.classList.toggle('scrolled', window.scrollY > 12);
@@ -255,7 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------------------------------------------------------------
      9. BACK TO TOP BUTTON
   --------------------------------------------------------------------- */
-  const backToTop = document.getElementById('backToTop');
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
   });
